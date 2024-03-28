@@ -1,2 +1,75 @@
+@import ../blocks_s/menu/menu
+    
 .hero
-    background-image: url(../images/hero-bg.png)
+    position: relative
+    height: 95vh
+    width: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url(../images/hero-bg-big.avif)
+    +media($xl)
+        background-image: url(../images/hero-bg.avif)
+    .container
+        +media($md)
+            padding: 0 20px
+
+
+.hero-title
+    color: #fff
+    padding-top: 121px
+    padding-bottom: 210px
+    +media($sm)
+        padding-top: 50px
+    &__place
+        font-size: 14px
+        padding-bottom: 22px
+        
+    &__first
+        font-size: 60px
+        font-weight: 700
+        line-height: 74px
+        padding-bottom: 24px
+        max-width: 616px
+        +media($sm)
+            font-size: 40px
+            line-height: 50px
+
+    &__second
+        font-size: 16px
+        line-height: 26px
+        padding-bottom: 45px
+        max-width: 581px
+        +media($md)
+            max-width: 250px
+
+    &__link
+        a
+            font-size: 16px
+            color: $yellow
+
+.spons
+    position: absolute
+    display: flex
+    background-color: #fff
+    z-index: 2
+    padding: 60px 166px 54px 65px
+    right: 0
+    bottom: -124px
+    gap: 66px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    +media($lg)
+        padding: 20px
+        gap: 10px
+        bottom: -60px
+    +media($md)
+        flex-direction: column
+
+
+
+    &-box
+        img
+            max-width: 156px
+            max-height: 112px
+            +media($lg)
+                max-width: 100px
+
