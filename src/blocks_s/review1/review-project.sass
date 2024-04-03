@@ -1,0 +1,41 @@
+.project
+    .review
+        position: absolute
+        bottom: -65px
+        right: -40px
+        max-width: 453px
+        max-height: 243px
+        box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.15)
+        background-color: #fff
+        +media($xl)
+            right: 0
+            bottom: 0
+        +media($lg)
+            position: static
+            box-shadow: none
+            
+        &-box 
+            margin: 30px 30px 0 30px
+            
+            +media($lg)
+                margin: 15px 15px 0 15px
+
+            +media($sm)
+                margin: 5px 5px 0 5px 
+
+            &__text
+                font-size: 16px
+                line-height: 26px
+                padding-bottom: 24px
+
+        .review-box__who
+            height: 250px
+            &-name 
+                left: 98px
+                top: 15px
+                +media($lg)
+                    position: static
+
+                &__first
+                    +media($lg)
+                        font-size: 16px

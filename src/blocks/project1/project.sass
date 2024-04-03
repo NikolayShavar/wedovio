@@ -1,15 +1,46 @@
+@import ../../blocks_s/fact__strategy/factProject
+@import ../../blocks_s/project-img-balenciaga/project-img
+@import ../../blocks_s/project-img-3d/project-img-reverse
+@import ../../blocks_s/review1/review-project
+@import ../../blocks_s/review1/review-reverse
+@import ../../blocks_s/project-img-3d/project-img-reverse
+@import ../../blocks/project2/project-reverse
+    
 .project
     position: relative
     padding-top: 301px
+    margin-bottom: 65px
+
+    +media($lg)
+        padding-top: 50px
 
 .project-title
     display: flex
     justify-content: space-between
+    margin-bottom: 110px
+
+    +media($lg)
+        align-items: center
+        text-align: center
+        flex-direction: column
+        margin-bottom: 20px
     
     &__first
         font-weight: 700
         font-size: 36px
         max-width: 325px
+
     &__second
+        color: $dark
         font-size: 16px
+        line-height: 26px
         max-width: 518px
+
+.project-inner 
+    display: flex
+
+    +media($xl)
+        flex-direction: column-reverse
+        justify-items: center
+        align-items: center
+    
