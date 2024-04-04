@@ -1,0 +1,13 @@
+@import ../../blocks_s/title2/title
+@import ../../blocks_s/ideas-item__product/ideas-item
+
+.ideas-box
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 30px
+    +media($lg)
+        grid-template-columns: repeat(2, 2fr)
+    +media($sm)
+        grid-template-columns: repeat(1, 4fr)
+        gap: 5px
+        justify-items: center
