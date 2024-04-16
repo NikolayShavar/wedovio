@@ -1,15 +1,55 @@
 .end
     position: relative
     width: 100%
-    // background-repeat: no-repeat
     background-image: url(../images/end.avif)
     color: #fff
+
+
+    &-title 
+        position: absolute
+        background-color: #fff
+        top: -172px
+        padding: 70px 289px 71px 164px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        +media($lg)
+            padding:70px 100px
+
+        +media($md)
+            padding: 25px 50px
+            top: -100px
+
+        +media($sm)
+            padding: 25px
+            top: -80px
+
+        &__title
+            font-weight: 700
+            font-size: 60px
+            line-height: 74px
+            padding-bottom: 50px
+            color: #4D533C
+            +media($lg)
+                font-size: 40px
+                line-height: 45px
+
+            +media($md)
+                font-size: 25px
+                line-height: 30px
+            
+            +media($sm)
+                font-size: 20px
+                line-height: 20px
+
+
 .end-contacts
     padding-top: 310px
     padding-bottom: 52px
     display: flex
     gap: 128px
     border-bottom: solid 1px #5D6544
+
+    +media($sm)
+        gap: 10px
 
     &__item
 
@@ -18,7 +58,158 @@
             line-height: 40px
             color: #B6C197
             padding-bottom: 8px
+            +media($xs)
+                font-size: 14px
         &-second
             font-weight: 700
             font-size: 16px
             line-height: 40px
+            +media($xs)
+                font-size: 12px
+
+.end-second
+    display: flex
+    padding-bottom: 60px
+    border-bottom: solid 1px #5D6544
+
+    +media($xl)
+        flex-direction: column
+        align-items: center
+
+.end-menu
+    display: flex
+    padding-top: 60px
+    +media($lg)
+        text-align: center
+
+    
+
+    &__services
+        padding-right: 70px
+
+        +media($lg)
+            padding-right: 20px
+
+        
+        +media($sm)
+            padding: 0
+            min-width: 130px
+
+        +media($xs)
+            min-width: 100px
+
+
+
+    &__help
+        padding-right: 100px
+
+        +media($lg)
+            padding-right: 20px
+
+        +media($sm)
+            padding: 0
+            min-width: 130px
+
+        +media($xs)
+            min-width: 100px
+
+            
+
+
+    &__company
+        padding-right: 13px
+        border-right: solid 1px #5D6544
+        min-width: 167px
+
+        +media($lg)
+            padding-right: 0
+            border-right: none
+
+        +media($sm)
+            min-width: 130px
+            font-size: 13px
+            padding: 0
+
+        +media($xs)
+            min-width: 100px
+
+
+    &-name 
+        font-weight: 600
+        font-size: 16px
+        text-transform: uppercase
+        line-height: 38px
+        padding-bottom: 21px
+
+    &__item
+        a
+            text-decoration: none
+            color: #B6C197
+            font-weight: 400
+            font-size: 16px
+            line-height: 40px
+            +media($sm)
+                font-size: 12px
+                line-height: 30px
+            +media($xs)
+                font-size: 10px
+
+.end-get 
+    padding-top: 60px
+    padding-left: 110px
+    +media($lg)
+        padding-left: 0
+
+    &__title
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 16px
+        line-height: 38px
+        padding-bottom: 23px
+        
+
+
+    &__text
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        color: #B6C197
+        padding-bottom: 23px
+
+    &__link
+        font-weight: 700
+        font-size: 24px
+        line-height: 38px
+        padding-bottom: 24px
+        +media($xs)
+            font-size: 15px
+
+    &__buble
+        display: flex
+        gap: 14px
+        &-item
+            cursor: pointer
+            width: 33px
+            height: 33px
+            border-radius: 50%
+            background-color: #444A34
+            transition: background-color 2.3s ease-in-out
+
+.end-get__buble-item:hover
+    background-color: #FFD723
+    transition: background-color 0.3s ease-in-out
+
+
+.end-end
+    display: flex
+    justify-content: space-between
+    overflow: hidden
+    max-height: 60px
+    padding-bottom: 80px
+    &__logo
+        padding-top: 24px
+
+    &__copy
+        padding-top: 33px
+        +media($xs)
+            font-size: 12px
